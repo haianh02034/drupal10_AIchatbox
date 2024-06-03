@@ -1,0 +1,47 @@
+#chat-icon-container {
+    display: flex; /* Sử dụng flexbox để căn giữa nội dung */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 20px; /* Khoảng cách phía trên */
+  }
+  
+  #chat-icon {
+    width: 50px; /* Chiều rộng của button */
+    height: 50px; /* Chiều cao của button */
+    border-radius: 50%; /* Tạo hình tròn */
+    background-color: #007bff; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Loại bỏ viền */
+    outline: none; /* Loại bỏ đường viền khi được focus */
+    cursor: pointer; /* Biểu tượng con trỏ khi di chuột qua */
+    display: flex; /* Sử dụng flexbox để căn giữa nội dung */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+  }
+  
+  #chat-icon:hover {
+    background-color: #0056b3; /* Màu nền khi di chuột qua */
+  }
+  
+  #chat-icon i {
+    font-size: 24px; /* Kích thước của icon */
+  }
+  
+  #chat-iframe-container {
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 9999; /* Ensure it's above other elements */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none; /* Initially hide the container */
+}
+
+#chat-iframe-container iframe {
+  width: 300px; /* Adjust as needed */
+  height: 400px; /* Adjust as needed */
+  border: none;
+}

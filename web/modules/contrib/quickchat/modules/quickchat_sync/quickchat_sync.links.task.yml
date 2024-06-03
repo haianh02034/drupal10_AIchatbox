@@ -1,0 +1,4 @@
+quickchat_sync.list:
+  title: Quickchat knowledge base
+  route_name: quickchat_sync.list
+  base_route: system.admin_content

@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Enables the usage of the Quickchat Chatbot.
+ */
+
+use Drupal\Core\Asset\AttachedAssetsInterface;
+
+/**
+ * Implements hook_js_alter().
+ */
+function quickchat_chatbot_js_alter(&$javascript, AttachedAssetsInterface $assets) {
+  if (array_key_exists('//www.quickchat.ai/user_kit/quickchat.js', $javascript)) {
+    $settings = $assets->getSettings();
+
+    if (array_key_exists('quickchat_chatbot', $settings)) {
+      if (array_key_exists('scenario_id', $settings['quickchat_chatbot'])) {
+        $scenario_id = $settings['quickchat_chatbot']['scenario_id'];
+        // Inject the unique scenario ID into the script tag.
+        $javascript['//www.quickchat.ai/user_kit/quickchat.js']['attributes']['scenario_id'] = $scenario_id;
+      }
+    }
+  }
+
+}

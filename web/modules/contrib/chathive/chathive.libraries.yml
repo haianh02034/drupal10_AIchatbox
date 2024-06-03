@@ -1,0 +1,14 @@
+chathive-widget:
+  version: 1.x
+  js:
+    https://sdk.chathive.app : { type: external, minified: true }
+
+chathive-initialisation:
+  version: 1.x
+  js:
+    js/chathive-init.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/once
+    - chathive/chathive-widget

@@ -1,0 +1,9 @@
+name: 'Custom Chatbot'
+type: module
+description: 'Integrate a custom chatbot block with Voiceflow.'
+core_version_requirement: ^9 || ^10
+package: Custom
+
+autoload:
+  psr-4:
+    Drupal\lucky_spin\: src/

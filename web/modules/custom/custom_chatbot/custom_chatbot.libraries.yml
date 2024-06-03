@@ -1,0 +1,10 @@
+custom_chatbot:
+  version: 1.x
+  css:
+    theme:
+      css/custom_chatbot_styles.css: {}
+  js:
+    js/custom_chatbot.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

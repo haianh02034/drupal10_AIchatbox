@@ -1,0 +1,5 @@
+entity.chathive.add_form:
+  route_name: 'entity.chathive.add_form'
+  title: 'Add chathive'
+  appears_on:
+    - entity.chathive.collection

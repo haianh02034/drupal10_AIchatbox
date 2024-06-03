@@ -1,0 +1,5 @@
+entity.chathive.overview:
+  title: Chathives
+  parent: system.admin_structure
+  description: 'List of chathives to extend site functionality.'
+  route_name: entity.chathive.collection

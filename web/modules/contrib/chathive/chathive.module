@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Contains chathive.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function chathive_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the chathive module.
+    case 'help.page.chathive':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Chathive allows you to integrate with the chathive.co chatbot platform.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function chathive_page_attachments(array &$page) {
+  Drupal::service('chathive.controller')->attachAndInitialize($page);
+}

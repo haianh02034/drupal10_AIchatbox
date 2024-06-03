@@ -1,0 +1,22 @@
+{
+  "name": "drupal/chathive",
+  "description": "Chatbot integration for Drupal using chathive.co",
+  "type": "drupal-module",
+  "keywords": ["Drupal", "Chatbot"],
+  "homepage": "https://www.drupal.org/project/chathive",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+      {
+          "name": "Peter neyens (p-neyens)",
+          "homepage": "https://www.drupal.org/u/p-neyens",
+          "role": "Maintainer"
+      }
+  ],
+  "support": {
+      "issues": "https://www.drupal.org/project/issues/chathive",
+      "source": "http://cgit.drupalcode.org/chathive"
+  },
+  "require": {
+    "drupal/core": "^9 || ^10"
+  }
+}

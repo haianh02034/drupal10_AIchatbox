@@ -1,0 +1,12 @@
+quickchat_sync.settings:
+  title: 'Quickchat Sync'
+  route_name: 'quickchat_sync.settings'
+  parent: 'system.admin_config_services'
+  description: 'Configure Quickchat Sync'
+  weight: -9
+
+quickchat_sync.list:
+  title: 'Quickchat KB List'
+  route_name: 'quickchat_sync.list'
+  description: 'Quickchat Sync List Operation '
+  parent: system.admin_content

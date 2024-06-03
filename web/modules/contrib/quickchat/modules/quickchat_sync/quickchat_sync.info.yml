@@ -1,0 +1,12 @@
+name: Quickchat sync
+description: 'Manage knowledge base entries to train your chatbot model.'
+type: module
+core_version_requirement: ^9.5 || ^10
+configure: quickchat_sync.settings
+dependencies:
+  - quickchat:quickchat
+
+# Information added by Drupal.org packaging script on 2023-08-23
+version: '1.0.0-alpha6'
+project: 'quickchat'
+datestamp: 1692777596

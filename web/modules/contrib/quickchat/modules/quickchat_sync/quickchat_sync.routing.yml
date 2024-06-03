@@ -1,0 +1,31 @@
+quickchat_sync.settings:
+  path: '/admin/config/services/quickchat-sync'
+  defaults:
+    _title: 'Quickchat Sync Configuration'
+    _form: '\Drupal\quickchat_sync\Form\SettingsForm'
+  requirements:
+    _permission: 'quickchat kb manage'
+
+quickchat_sync.list:
+  path: '/admin/content/kb'
+  defaults:
+    _title: 'Quickchat Sync knowledge bases'
+    _form: '\Drupal\quickchat_sync\Form\ListOperationForm'
+  requirements:
+    _permission: 'quickchat kb manage'
+
+quickchat_sync.operation:
+  path: '/admin/content/kb/{model_name}/operations'
+  defaults:
+    _title: 'Quickchat Sync'
+    _form: '\Drupal\quickchat_sync\Form\OperationForm'
+  requirements:
+    _permission: 'quickchat kb manage'
+
+quickchat_sync.modal_form:
+  path: '/admin/content/kb/{model_name}/operations/{operation}/modal'
+  defaults:
+    _title: 'Quickchat Sync'
+    _controller: '\Drupal\quickchat_sync\Controller\ModalFormController::openModalForm'
+  requirements:
+    _permission: 'quickchat kb manage'

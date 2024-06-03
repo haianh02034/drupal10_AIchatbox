@@ -1,0 +1,16 @@
+name: 'Chathive Chatbot'
+type: module
+description: 'Integration between Drupal and the Chathive chatbot framework'
+core_version_requirement: ^9 || ^10
+package: 'Chatbot'
+configure: entity.chathive.collection
+
+# Information added by Drupal.org packaging script on 2023-10-13
+# version: '1.0.0-alpha1'
+# project: 'chathive'
+# datestamp: 1697182199
+
+# Information added by Drupal.org packaging script on 2024-03-11
+version: '1.0.0-alpha7'
+project: 'chathive'
+datestamp: 1710154704

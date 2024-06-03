@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Chathive module.
+ */
+
+use Drupal\Component\Plugin\Exception\PluginException;
+use Drupal\Core\Entity\EntityStorageException;
+
+/**
+ * Implements hook_uninstall().
+ */
+function chathive_uninstall() {
+  // Making sure the entities are deleted.
+  try {
+    $storage_handler = Drupal::entityTypeManager()
+      ->getStorage('chathive');
+    $entities = $storage_handler->loadMultiple();
+    $storage_handler->delete($entities);
+  }
+  catch (PluginException | EntityStorageException $e) {
+    Drupal::logger('chathive')->error($e->getMessage());
+  }
+  // Uninstalling the entity afterward.
+  $entity_update_manager = Drupal::entityDefinitionUpdateManager();
+  $entity_type = $entity_update_manager->getEntityType('chathive');
+  $entity_update_manager->uninstallEntityType($entity_type);
+
+  drupal_flush_all_caches();
+}

@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Enables the usage of the Quickchat Sync.
+ */
+
+use Drupal\Core\Url;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_entity_operation().
+ */
+function quickchat_sync_entity_operation_alter(array &$operations, EntityInterface $entity) {
+  if ($entity->getEntityTypeId() == 'node') {
+    if ($entity->getType() == 'quickchat_kb') {
+      $editUrl = Url::fromRoute('entity.node.edit_form', ['node' => $entity->id()]);
+      $operations['custom_operation'] = [
+        'title' => t('Rebuild'),
+        'weight' => 20,
+        'url' => $editUrl,
+      ];
+    }
+  }
+}

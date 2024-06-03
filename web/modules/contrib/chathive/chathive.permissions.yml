@@ -1,0 +1,3 @@
+administer chathive configuration:
+  title: 'Administer chathive configuration'
+  restrict access: true

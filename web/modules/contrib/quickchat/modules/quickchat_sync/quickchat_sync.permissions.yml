@@ -1,0 +1,27 @@
+quickchat kb view:
+  title: 'Quickchat KB View'
+  description: 'Determines whether or not an user can view a Quickchat KB node.'
+
+quickchat kb create:
+  title: 'Quickchat KB Create'
+  description: 'Determines whether or not an user can create a Quickchat KB node.'
+
+quickchat kb edit:
+  title: 'Quickchat KB Edit'
+  description: 'Determines whether or not an user can edit a Quickchat KB node.'
+
+quickchat kb delete:
+  title: 'Quickchat KB Delete'
+  description: 'Determines whether or not an user can delete a Quickchat KB node.'
+
+quickchat kb update:
+  title: 'Quickchat KB Update'
+  description: 'Determines whether or not an user can update a Quickchat KB node.'
+
+quickchat kb rebuild:
+  title: 'Quickchat KB Rebuild'
+  description: 'Determines whether or not an user can rebuild a Quickchat KB node.'
+
+quickchat kb manage:
+  title: 'Quickchat KB Manage'
+  description: 'Determines whether or not an user can manage the module config.'

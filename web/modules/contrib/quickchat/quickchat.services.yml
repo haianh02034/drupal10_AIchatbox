@@ -1,0 +1,10 @@
+services:
+  quickchat.api_client:
+    class: Drupal\quickchat\QuickchatApiClient
+    arguments:
+      [
+        "@http_client",
+        "@uuid",
+        "@messenger",
+        "@logger.factory",
+      ]

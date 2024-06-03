@@ -1,0 +1,25 @@
+quickchat_sync.settings:
+  type: config_object
+  label: 'quickchat_sync settings'
+  mapping:
+    label:
+      type: string
+      label: 'Label'
+    scenario_id:
+      type: string
+      label: 'Scenario ID'
+    token:
+      type: string
+      label: 'Token'
+    view_name:
+      type: string
+      label: 'View Name'
+    view_display:
+      type: string
+      label: 'View Display'
+    view_arguments:
+      type: string
+      label: 'View Arguments'
+    num_lines:
+      type: integer
+      label: 'Num lines'

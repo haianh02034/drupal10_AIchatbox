@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quickchat_kb
+    - node.type.quickchat_kb
+id: node.quickchat_kb.field_quickchat_kb
+field_name: field_quickchat_kb
+entity_type: node
+bundle: quickchat_kb
+label: 'Knowledge base'
+description: 'A paragraph of text on a discrete subject.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,10 @@
+quickchat:
+  version: VERSION
+  header: true
+  js:
+    //www.quickchat.ai/user_kit/quickchat.js:
+      {
+        type: external,
+        attributes: { id: 'quickchat_script', scenario_id: 'scenario_id' },
+        minified: true,
+      }

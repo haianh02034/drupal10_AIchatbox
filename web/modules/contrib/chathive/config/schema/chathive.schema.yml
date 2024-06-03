@@ -1,0 +1,27 @@
+chathive.chathive.*:
+  type: config_entity
+  label: Chathive
+  mapping:
+    id:
+      type: string
+      label: ID
+    chatbot_id:
+      type: string
+      label: Chatbot ID
+    label:
+      type: label
+      label: Label
+    uuid:
+      type: string
+    description:
+      type: string
+    mobile_notifications:
+      type: boolean
+      label: 'Mobile notifications'
+    visibility:
+      type: sequence
+      label: 'Visibility Conditions'
+      sequence:
+        type: condition.plugin.[id]
+        label: 'Visibility Condition'
+

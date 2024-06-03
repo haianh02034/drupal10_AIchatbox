@@ -1,0 +1,12 @@
+services:
+  chathive.controller:
+    class: Drupal\chathive\Controller\ChathiveController
+    arguments:
+      - '@entity_type.manager'
+      - '@plugin.manager.condition'
+      - '@language_manager'
+      - '@current_route_match'
+      - '@current_user'
+      - '@module_handler'
+      - '@session'
+      - '@router.admin_context'

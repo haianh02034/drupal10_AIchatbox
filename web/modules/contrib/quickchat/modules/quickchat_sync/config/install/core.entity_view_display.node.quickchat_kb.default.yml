@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.quickchat_kb.field_quickchat_kb
+    - node.type.quickchat_kb
+  module:
+    - user
+id: node.quickchat_kb.default
+targetEntityType: node
+bundle: quickchat_kb
+mode: default
+content:
+  field_quickchat_kb:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  search_api_excerpt: true
